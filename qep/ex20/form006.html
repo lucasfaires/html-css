@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="icor">Cor: </label>
             <input type="color" name="cor" id="icor">
@@ -20,7 +20,7 @@
         </p>
 
         <p>
-            <label for="ifoto">Foto do Perfil: </label>
+            <label for="ifoto">Foto do Perfil: </label> <!--Quando for usar FOTOS, usar o method POST ao invés do GET-->
             <input type="file" name="foto" id="ifoto">
         </p>
 
