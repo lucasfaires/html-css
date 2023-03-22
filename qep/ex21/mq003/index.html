@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
     <style>
         /* Declarações Gerais */
 
@@ -33,15 +34,19 @@
 
         @media screen and (orientation: portrait) {
             body {
-    background-image: url(../imagens/cev-portrait.jpg);
-    background-position: center bottom;
-}
+            background-image: url(../imagens/cev-portrait.jpg);
+            background-position: center bottom;
+            }
 
         }
 
         /* Declarações paisagem */
 
         @media screen and (orientation: landscape) {
+            body {
+            background-image: url(../imagens/cev-landscape.jpg);
+            background-position: left bottom;
+            }
 
         }
         
