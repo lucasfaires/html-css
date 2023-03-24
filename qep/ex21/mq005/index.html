@@ -4,26 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="estilos/style.css">
     <title>Media Query </title>
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
-            <li><a href="#">Opção 1</a></li>
-            <li><a href="#">Opção 2</a></li>
-            <li><a href="#">Opção 3</a></li>
-            <li><a href="#">Opção 4</a></li>
-            <li><a href="#">Opção 5</a></li>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
         </menu>
     </header>
     <main>
         <article>
             <h2>Testando Media Queries</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet harum dolores ut? Nisi dolorem tempora nesciunt voluptas iste laboriosam temporibus assumenda deserunt, molestiae, minima, quis totam error sunt asperiores perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum hic ipsam dignissimos magnam nesciunt quas sunt, consequatur molestias in suscipit neque nisi, quos ipsum consequuntur facilis minima quam deserunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis deserunt delectus quis ad quo sint, aperiam deleniti cumque magnam numquam animi laborum temporibus doloribus ea velit possimus voluptas? Sint, non?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, expedita sapiente voluptatum ea cum adipisci. Autem quasi, incidunt quas vitae quam labore aliquam debitis aspernatur delectus asperiores, accusamus natus amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate numquam voluptatibus explicabo, quam quas tenetur nesciunt, ex maiores repudiandae ipsam doloremque <br>consequuntur autem impedit accusamus debitis provident iste distinctio mollitia!</p>
         </article>
     </main>
-    
+    <script>
+        function clickMenu() {
+           if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+           } else {
+            itens.style.display = 'block'
+           }
+        }
+    </script>
 </body>
 </html>
